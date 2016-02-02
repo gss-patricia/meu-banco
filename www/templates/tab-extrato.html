@@ -1,0 +1,57 @@
+
+# Utilize o código abaixo no arquivo templates/tab-extrato.html:
+
+# Esse código irá criar uma tela de extrato.
+
+<ion-view view-title='<i class="icon ion-document-text"></i> Extrato'>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <p>Movimentação dos últimos 5 dias</p>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-67">
+            <p>DETALHES</p>
+          </div>
+          <div class="col text-right">
+            <p>VALOR (R$)</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item ng-repeat="i in [1, 2, 3]">
+        <div class="row">
+          <div class="col col-67 item-text-wrap">
+            <p>Compra com cartão Wallmart.com</p>
+            <p><small class="calm">0{{i}}/01 às 14:41</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p><span class="assertive">{{i}}4,4{{i}} <i class="icon ion-minus-circled"></i></span></p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item ng-repeat="j in [4, 5, 6]">
+        <div class="row">
+          <div class="col col-67 item-text-wrap">
+            <p>Compra com cartão Wallmart.com</p>
+            <p><small class="calm">0{{j}}/01 às 14:41</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p><span class="balanced">{{j}}6,4{{j}} <i class="icon ion-plus-circled"></i></span></p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col">
+            <p>SALDO</p>
+          </div>
+          <div class="col text-right">
+            <p><span class="positive">1.086,45 <i class="icon ion-plus-circled"></i></span>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <br>
+  </ion-content>
+</ion-view>

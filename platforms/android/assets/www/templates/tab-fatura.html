@@ -1,0 +1,161 @@
+a<ion-view view-title='<i class="icon ion-card"></i> Fatura Cartão'>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <p><strong class="positive">Resumo da sua fatura</strong></p>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col">
+            <p><small>Cartão</small></p>
+          </div>
+          <div class="col text-right">
+            <p>OURO CARD INTERN. VISA UNIV</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col item-text-wrap">
+            <p><small>Número do Cartão</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p>4984.****.****.1537</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col item-text-wrap">
+            <p><small>Nome</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p>Patrícia Gomes</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col item-text-wrap">
+            <p><small>Vencimento</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p>10.01.2016</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col item-text-wrap">
+            <p><small>Total da Fatura</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p>R$ 242,83</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col item-text-wrap">
+            <p><small>Pagamento Mínimo</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p>R$ 50,15</p>
+          </div>
+        </div>
+      </ion-item>
+
+      <br><br>
+
+      <ion-item>
+        <p><strong class="positive">Pagamentos</strong></p>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-67">
+            <p>TRANSAÇÕES</p>
+          </div>
+          <div class="col text-right">
+            <p>VALOR (R$)</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-67 item-text-wrap">
+            <p><small>PGTO DEBITO CONTA 4444 00000000 000</small></p>
+            <p><small class="calm">10/12/2015</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p><span class="assertive">589,90 <i class="icon ion-minus-circled"></i></span></p>
+          </div>
+        </div>
+      </ion-item>
+
+      <br><br>
+
+      <ion-item>
+        <p><strong class="positive">Compras a vista</strong></p>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-67">
+            <p>TRANSAÇÕES</p>
+          </div>
+          <div class="col text-right">
+            <p>VALOR (R$)</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item ng-repeat="i in [1, 2]">
+        <div class="row">
+          <div class="col col-67 item-text-wrap">
+            <p><small>STRIKE MANIA CIDADE SUL</small></p>
+            <p><small class="calm">0{{i}}/01 às 14:41</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p><span class="assertive">1{{i}}4,4{{i}} <i class="icon ion-minus-circled"></i></span></p>
+          </div>
+        </div>
+      </ion-item>
+
+      <br><br>
+
+      <ion-item>
+        <p><strong class="positive">Anuidade</strong></p>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-67">
+            <p>TRANSAÇÕES</p>
+          </div>
+          <div class="col text-right">
+            <p>VALOR (R$)</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-67 item-text-wrap">
+            <p><small>ANUIDADE DIFERENCIADA TIT-PARC 10/12</small></p>
+            <p><small class="calm">0{{i}}/01 às 14:41</small></p>
+          </div>
+          <div class="col col-center text-right">
+            <p><span class="assertive">4,00 <i class="icon ion-minus-circled"></i></span></p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="row">
+          <div class="col col-67">
+            <p>TOTAL A PAGAR</p>
+          </div>
+          <div class="col text-right">
+            <p><span class="positive">242,83 <i class="icon ion-plus-circled"></i></span>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <br>
+  </ion-content>
+</ion-view>
